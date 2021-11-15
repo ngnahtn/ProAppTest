@@ -19,14 +19,40 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gnc: UITextField!
     @IBOutlet weak var f1: UITextField!
-    @IBOutlet weak var f2: UITextField!
     
     @IBOutlet weak var GValueLabel: UILabel!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = "Xac Dinh Chi Phi Phan Mem"
+        self.navigationItem.title = "Product Value"
+        let taw = UserDefaults.standard.string(forKey: "TAW") ?? ""
+        let tbf = UserDefaults.standard.string(forKey: "TBF") ?? ""
+        let tfw = UserDefaults.standard.string(forKey: "TFW") ?? ""
+        let efw = UserDefaults.standard.string(forKey: "EFW") ?? ""
+        let p = UserDefaults.standard.string(forKey: "P") ?? ""
+        TAW.text = "\(taw)"
+        TBF.text = "\(tbf)"
+        TFW.text = "\(tfw)"
+        EFW.text = "\(efw)"
+        PValueTextField.text = "\(p)"
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleNext))
+        self.navigationItem.rightBarButtonItem = add
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+    }
+    @objc func handleNext() {
+        if let pValue = PValueTextField.text {
+            let GValue = ProductValue(e: Double(EValueLabel.text!) ?? 0, p: Double(pValue) ?? 0, h: Double(HValueLabel.text!) ?? 0)
+            let vc = ProductCost(nibName: "ProductCost", bundle: nil)
+            vc.gValueDouble = GValue.handleProductValue()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            return
+        }
+        
     }
     @IBAction func handleEValueButton(_ sender: UIButton) {
         let efw = EFW.text!
@@ -40,15 +66,16 @@ class ViewController: UIViewController {
     @IBAction func handleHButton(_ sender: UIButton) {
         let gnc = gnc.text!
         let f1 = f1.text!
-        let f2 = f2.text!
-        var hValue = HValue(gNC: Double(gnc)!, f1: Double(f1)!, f2: Double(f2)!)
+        var hValue = HValue(gNC: Double(gnc)!, f1: Double(f1)!)
         self.HValueLabel.text = "\(hValue.handleHValue())"
     }
     
     @IBAction func handleGButton(_ sender: UIButton) {
         let pValue = PValueTextField.text!
         let GValue = ProductValue(e: Double(EValueLabel.text!)!, p: Double(pValue)!, h: Double(HValueLabel.text!)!)
-        self.GValueLabel.text = "\(GValue.handleProductValue())"
+        let gdoubleValue = GValue.handleProductValue()
+        let y = Double(round(10*gdoubleValue)/10)
+        self.navigationItem.title = "Product Value: \(y)"
     }
 }
 

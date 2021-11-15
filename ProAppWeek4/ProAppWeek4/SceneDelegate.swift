@@ -15,12 +15,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: scene)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let viewController = TAWViewController(nibName: "TAWViewController", bundle: nil)
         let nav1 = UINavigationController(rootViewController: viewController)
         self.window!.rootViewController = nav1
         self.window?.makeKeyAndVisible()
-        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as  String)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

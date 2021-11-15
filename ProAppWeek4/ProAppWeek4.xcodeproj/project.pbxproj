@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841367F52742BF280049A4F8 /* EFWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841367F32742BF280049A4F8 /* EFWViewController.swift */; };
+		841367F62742BF280049A4F8 /* EFWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841367F42742BF280049A4F8 /* EFWViewController.xib */; };
+		847DAD062742980400D149D1 /* ProductCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DAD042742980400D149D1 /* ProductCost.swift */; };
+		847DAD072742980400D149D1 /* ProductCost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DAD052742980400D149D1 /* ProductCost.xib */; };
+		847DAD0A27429F5100D149D1 /* TAWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DAD0827429F5100D149D1 /* TAWViewController.swift */; };
+		847DAD0B27429F5100D149D1 /* TAWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DAD0927429F5100D149D1 /* TAWViewController.xib */; };
+		847DAD112742A6B500D149D1 /* TBFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DAD0F2742A6B500D149D1 /* TBFViewController.swift */; };
+		847DAD122742A6B500D149D1 /* TBFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DAD102742A6B500D149D1 /* TBFViewController.xib */; };
+		8489157B2742B81F007696CE /* TFWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848915792742B81F007696CE /* TFWViewController.swift */; };
+		8489157C2742B81F007696CE /* TFWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8489157A2742B81F007696CE /* TFWViewController.xib */; };
 		849110C72737DC1B00A9E474 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849110C62737DC1B00A9E474 /* DataSource.swift */; };
 		84CCB05A2737C897009891D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCB0592737C897009891D1 /* AppDelegate.swift */; };
 		84CCB05C2737C897009891D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCB05B2737C897009891D1 /* SceneDelegate.swift */; };
@@ -38,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841367F32742BF280049A4F8 /* EFWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFWViewController.swift; sourceTree = "<group>"; };
+		841367F42742BF280049A4F8 /* EFWViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EFWViewController.xib; sourceTree = "<group>"; };
+		847DAD042742980400D149D1 /* ProductCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCost.swift; sourceTree = "<group>"; };
+		847DAD052742980400D149D1 /* ProductCost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCost.xib; sourceTree = "<group>"; };
+		847DAD0827429F5100D149D1 /* TAWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAWViewController.swift; sourceTree = "<group>"; };
+		847DAD0927429F5100D149D1 /* TAWViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAWViewController.xib; sourceTree = "<group>"; };
+		847DAD0F2742A6B500D149D1 /* TBFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBFViewController.swift; sourceTree = "<group>"; };
+		847DAD102742A6B500D149D1 /* TBFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBFViewController.xib; sourceTree = "<group>"; };
+		848915792742B81F007696CE /* TFWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFWViewController.swift; sourceTree = "<group>"; };
+		8489157A2742B81F007696CE /* TFWViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFWViewController.xib; sourceTree = "<group>"; };
 		849110C62737DC1B00A9E474 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		84CCB0562737C897009891D1 /* ProAppWeek4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProAppWeek4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CCB0592737C897009891D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +100,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		847DAD0C2742A25000D149D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849110C62737DC1B00A9E474 /* DataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847DAD0D2742A25500D149D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				847DAD0827429F5100D149D1 /* TAWViewController.swift */,
+				847DAD0F2742A6B500D149D1 /* TBFViewController.swift */,
+				848915792742B81F007696CE /* TFWViewController.swift */,
+				841367F32742BF280049A4F8 /* EFWViewController.swift */,
+				84CCB05D2737C897009891D1 /* ViewController.swift */,
+				847DAD042742980400D149D1 /* ProductCost.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		847DAD0E2742A25B00D149D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847DAD0927429F5100D149D1 /* TAWViewController.xib */,
+				847DAD052742980400D149D1 /* ProductCost.xib */,
+				84CCB05F2737C897009891D1 /* Main.storyboard */,
+				847DAD102742A6B500D149D1 /* TBFViewController.xib */,
+				8489157A2742B81F007696CE /* TFWViewController.xib */,
+				841367F42742BF280049A4F8 /* EFWViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84CCB04D2737C897009891D1 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +157,15 @@
 		84CCB0582737C897009891D1 /* ProAppWeek4 */ = {
 			isa = PBXGroup;
 			children = (
+				847DAD0E2742A25B00D149D1 /* View */,
+				847DAD0D2742A25500D149D1 /* Controller */,
+				847DAD0C2742A25000D149D1 /* Model */,
 				84CCB0592737C897009891D1 /* AppDelegate.swift */,
 				84CCB05B2737C897009891D1 /* SceneDelegate.swift */,
-				84CCB05D2737C897009891D1 /* ViewController.swift */,
-				84CCB05F2737C897009891D1 /* Main.storyboard */,
 				84CCB0652737C899009891D1 /* Assets.xcassets */,
 				84CCB0672737C899009891D1 /* LaunchScreen.storyboard */,
 				84CCB06A2737C899009891D1 /* Info.plist */,
 				84CCB0622737C897009891D1 /* ProAppWeek4.xcdatamodeld */,
-				849110C62737DC1B00A9E474 /* DataSource.swift */,
 			);
 			path = ProAppWeek4;
 			sourceTree = "<group>";
@@ -238,8 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CCB0692737C899009891D1 /* LaunchScreen.storyboard in Resources */,
+				8489157C2742B81F007696CE /* TFWViewController.xib in Resources */,
 				84CCB0662737C899009891D1 /* Assets.xcassets in Resources */,
+				847DAD0B27429F5100D149D1 /* TAWViewController.xib in Resources */,
+				847DAD072742980400D149D1 /* ProductCost.xib in Resources */,
 				84CCB0612737C897009891D1 /* Main.storyboard in Resources */,
+				847DAD122742A6B500D149D1 /* TBFViewController.xib in Resources */,
+				841367F62742BF280049A4F8 /* EFWViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +327,12 @@
 				84CCB05A2737C897009891D1 /* AppDelegate.swift in Sources */,
 				84CCB0642737C897009891D1 /* ProAppWeek4.xcdatamodeld in Sources */,
 				849110C72737DC1B00A9E474 /* DataSource.swift in Sources */,
+				847DAD062742980400D149D1 /* ProductCost.swift in Sources */,
+				8489157B2742B81F007696CE /* TFWViewController.swift in Sources */,
+				847DAD112742A6B500D149D1 /* TBFViewController.swift in Sources */,
 				84CCB05C2737C897009891D1 /* SceneDelegate.swift in Sources */,
+				847DAD0A27429F5100D149D1 /* TAWViewController.swift in Sources */,
+				841367F52742BF280049A4F8 /* EFWViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
